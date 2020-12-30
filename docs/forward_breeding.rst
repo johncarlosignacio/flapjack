@@ -59,7 +59,10 @@ Partial Match (0.0 - 1.0)
   Calculated by averaging matching scores of favourable alleles for each marker, 0.5 for het, 1.0 for homozygous.
 
 Complete Match (0.0, 0.6, 1.0)
-  Calculated by taking the maximum matching scores for favourable alleles at each marker, 0.6 for het, 1.0 for homozygous.
+  Calculated by taking the minimum matching scores for favourable alleles at each marker, 0.6 for het, 1.0 for homozygous.
+  
+Average Haplotype Match (0.0 - 1.0)
+  Calculated by averaging the *Complete Match* scores of all marker groups.
 
 +---------+----------------+-----+-----+-------+-------+---------------+----------------+
 | Samples |  Marker Group  | Markers   | Marker Scores | Partial Match | Complete Match |
